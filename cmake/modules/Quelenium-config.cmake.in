@@ -1,0 +1,13 @@
+# - Config information for Quelenium
+# This file defines:
+#
+#  QGSQ_INCLUDE_DIR - the Cutelyst include directory
+#  QGSQ_LIBRARY - Link these to use Cutelyst
+
+SET(prefix "@CMAKE_INSTALL_PREFIX@")
+SET(exec_prefix "@CMAKE_INSTALL_PREFIX@")
+SET(QUELENIUM_LIBRARY "@CMAKE_INSTALL_LIBDIR@/libquelenium.so" CACHE FILEPATH "Libraries for Quelenium")
+SET(QUELENIUM_INCLUDE_DIR "@CMAKE_INSTALL_PREFIX@/include/Quelenium/" CACHE PATH "Include path for Quelenium")
+SET(QUELENIUM_FOUND "TRUE")
+
+include("${CMAKE_CURRENT_LIST_DIR}/QueleniumTargets.cmake")
