@@ -1,8 +1,8 @@
 # - Config information for Quelenium
 # This file defines:
 #
-#  QGSQ_INCLUDE_DIR - the Cutelyst include directory
-#  QGSQ_LIBRARY - Link these to use Cutelyst
+#  QUELENIUM_INCLUDE_DIR - the Quelenium include directory
+#  QUELENIUM_LIBRARY - Link these to use Quelenium
 
 SET(prefix "@CMAKE_INSTALL_PREFIX@")
 SET(exec_prefix "@CMAKE_INSTALL_PREFIX@")
