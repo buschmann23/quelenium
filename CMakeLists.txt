@@ -33,5 +33,9 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/QueleniumConfig.cmake
     ${CMAKE_CURRENT_BINARY_DIR}/QueleniumConfigVersion.cmake
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/Quelenium/
 )
+install(EXPORT QueleniumTargets
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/Quelenium/
+    FILE QueleniumTargets.cmake
+)
 
 add_subdirectory(selenium)

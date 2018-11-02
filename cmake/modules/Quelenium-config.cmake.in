@@ -1,13 +1,13 @@
 # - Config information for Quelenium
 # This file defines:
 #
-#  QUELENIUM_INCLUDE_DIR - the Quelenium include directory
-#  QUELENIUM_LIBRARY - Link these to use Quelenium
+#  Quelenium_INCLUDE_DIR - the Quelenium include directory
+#  Quelenium_LIBRARY - Link these to use Quelenium
 
 SET(prefix "@CMAKE_INSTALL_PREFIX@")
 SET(exec_prefix "@CMAKE_INSTALL_PREFIX@")
-SET(QUELENIUM_LIBRARY "@CMAKE_INSTALL_LIBDIR@/libquelenium.so" CACHE FILEPATH "Libraries for Quelenium")
-SET(QUELENIUM_INCLUDE_DIR "@CMAKE_INSTALL_PREFIX@/include/Quelenium/" CACHE PATH "Include path for Quelenium")
-SET(QUELENIUM_FOUND "TRUE")
+SET(Quelenium_LIBRARY "@CMAKE_INSTALL_LIBDIR@/libquelenium.so" CACHE FILEPATH "Libraries for Quelenium")
+SET(Quelenium_INCLUDE_DIR "@CMAKE_INSTALL_PREFIX@/include/Quelenium/" CACHE PATH "Include path for Quelenium")
+SET(Quelenium_FOUND "TRUE")
 
 include("${CMAKE_CURRENT_LIST_DIR}/QueleniumTargets.cmake")
