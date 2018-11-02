@@ -6,7 +6,7 @@
 
 SET(prefix "@CMAKE_INSTALL_PREFIX@")
 SET(exec_prefix "@CMAKE_INSTALL_PREFIX@")
-SET(Quelenium_LIBRARY "@CMAKE_INSTALL_LIBDIR@/libquelenium.so" CACHE FILEPATH "Libraries for Quelenium")
+SET(Quelenium_LIBRARY "@CMAKE_INSTALL_LIBDIR@/libQuelenium.so" CACHE FILEPATH "Libraries for Quelenium")
 SET(Quelenium_INCLUDE_DIR "@CMAKE_INSTALL_PREFIX@/include/Quelenium/" CACHE PATH "Include path for Quelenium")
 SET(Quelenium_FOUND "TRUE")
 

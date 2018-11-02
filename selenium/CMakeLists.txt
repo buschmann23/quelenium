@@ -68,14 +68,12 @@ set(quelenium_CONVHEADERS
     ../WebDriverException
 )
 
-add_library(quelenium SHARED
+add_library(Quelenium SHARED
     ${quelenium_SRC}
     ${quelenium_HEADERS}
 )
 
-add_library(Quelenium ALIAS quelenium)
-
-target_include_directories(quelenium
+target_include_directories(Quelenium
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
         $<INSTALL_INTERFACE:include/Quelenium/selenium>
@@ -83,20 +81,20 @@ target_include_directories(quelenium
         ${CMAKE_CURRENT_BINARY_DIR}
 )
 
-set_target_properties(quelenium PROPERTIES
+set_target_properties(Quelenium PROPERTIES
     VERSION ${PROJECT_VERSION}
     SOVERSION 0
 )
 
-target_link_libraries(quelenium
+target_link_libraries(Quelenium
     PUBLIC
         Qt5::Core
         Qt5::Network
 )
 
-set_property(TARGET quelenium PROPERTY PUBLIC_HEADER ${quelenium_HEADERS})
+set_property(TARGET Quelenium PROPERTY PUBLIC_HEADER ${quelenium_HEADERS})
 
-install(TARGETS quelenium
+install(TARGETS Quelenium
     EXPORT QueleniumTargets DESTINATION ${CMAKE_INSTALL_LIBDIR}
     PUBLIC_HEADER DESTINATION include/Quelenium/selenium
 )
